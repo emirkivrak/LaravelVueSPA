@@ -23,7 +23,9 @@ let routes = [
 
 //// route dizisindeki rotaları kullan
 const router = new VueRouter({
-    routes
+    mode: 'history',
+    routes,
+    linkActiveClass: 'active'
 })
 
 /**
