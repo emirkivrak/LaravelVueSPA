@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-// SPA olduğu için tek rota
+Auth::routes();
 Route::get('{path}', 'HomeController@index')->where( 'path' , '([A-z\d\-\/_.]+)?' );
